@@ -1,0 +1,121 @@
+/* CSS RESET */
+*{
+    margin: 0; padding: 0; 
+}
+html{
+    scroll-behavior: smooth;
+}
+/* VARIABLES */
+:root{
+    --navbar-height:60px;
+}
+
+/* NAVIGATION BAR */
+#navbar::before{
+    content:""; background-color:black; height:100%; width: 100%; position: absolute; top: 0px; left:0px;  z-index: -1; opacity: 0.7; border-radius: 5px;
+}
+#navbar{
+    display: flex; align-items: center; position: sticky; top: 0px;
+}
+#logo{
+    margin:5px 13px;
+}
+#logo img{
+    width:110px;height:70px; padding: 3px 5px;
+}
+
+#navbar ul{
+    display: flex;  
+}
+#navbar ul li{
+    list-style: none; font-size: 1.2rem; 
+}
+#navbar ul li a{
+    text-decoration: none; padding: 3px 22px; display: block; border-radius: 20px; color: white; font-family: 'Bree Serif', serif;
+}
+#navbar ul li a:hover{
+    background-color: white; color: black;
+}
+/* HOME SECTION */
+#home{
+    display: flex; flex-direction: column; justify-content: center; align-items: center; padding:3px 180px; height: 490px;
+}
+#home::before{
+    background: url('https://cdn.pixabay.com/photo/2014/06/11/17/00/food-366875__340.jpg') no-repeat center center/cover; content: ""; width: 100%; height:630px ;z-index: -1; opacity:0.9; position: absolute; top: 0px; left: 0px;
+}
+
+#home h1{
+    color: white; text-align: center; 
+}
+
+#home p{
+    font-size:0.9rem; color: white; text-align: center; font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* SERVICES SECTION */
+#services{
+    margin: 20px;  display: flex;
+}
+#services .box{
+    border: 2px solid brown; padding: 30px; margin: 3px 6px; border-radius: 20px; background: #f5e8e8;
+}
+#services .box img{
+    height: 160px; margin: auto; display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* CLIENT SECTION */
+#client-section::before{
+    content: "";  width: 100%; height:270px; background: url('https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220__340.jpg') no-repeat center center/cover; z-index:-1; opacity:0.7; position: absolute;
+}
+#clients{
+    display: flex; justify-content: center; align-items: center;
+}
+#clients img{
+    height:124px;
+}
+
+/* CONTACT SECTION */
+#contact::before{
+    content:""; height:618px;  width: 100%; z-index: -1; opacity: 0.7; position:absolute; background: url(https://cdn.pixabay.com/photo/2017/08/03/14/38/ice-cream-2576622__340.jpg) no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex; justify-content: center; align-items: center; padding-bottom: 25px;;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%; padding:0.5rem; border-radius: 9px; font-size:1.0rem;
+} 
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-family: 'Bree Serif', serif; font-size: 1.3rem;
+}
+#submit{
+    display: flex;  align-items: center; justify-content: center;
+}
+
+/* FOOTER */
+footer{
+    background: black; color: white; height: 120px; font-size: large; align-items: center; justify-content: center; display: flex;
+}
+
+/* UTILITY CLASSES-WILL BE REUSED */
+.primary{
+    font-size: 3.8rem; padding: 12px; font-family: 'Bree Serif', serif; margin: 20px;
+}
+.secondary{
+    font-size: 2.1rem; padding: 12px; font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px; background-color:brown;  color:white; margin: 17px; border-radius: 20px; font-size: 1.3rem; border: 2px solid white; cursor: pointer; outline: none;
+}
+.submitbtn{
+    color: white; background-color: black; 
+}
+.center{
+    text-align: center;
+}
