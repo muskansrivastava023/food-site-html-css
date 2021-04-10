@@ -37,20 +37,74 @@ html{
     background-color: white; color: black;
 }
 /* HOME SECTION */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
 #home{
-    display: flex; flex-direction: column; justify-content: center; align-items: center; padding:3px 180px; height: 490px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; padding:0px 180px; height: 490px;
 }
 #home::before{
     background: url('https://cdn.pixabay.com/photo/2014/06/11/17/00/food-366875__340.jpg') no-repeat center center/cover; content: ""; width: 100%; height:630px ;z-index: -1; opacity:0.9; position: absolute; top: 0px; left: 0px;
 }
 
 #home h1{
-    color: white; text-align: center; 
+    color: white; text-align: center; margin-bottom: 0px;
 }
 
 #home p{
-    font-size:0.9rem; color: white; text-align: center; font-family: 'Baloo Bhaina 2', cursive;
+    font-size:1rem; color: rgb(241, 221, 221); text-align: center; font-family: 'Baloo Bhaina 2', cursive;
 }
+#container {
+    color:rgb(255, 167, 2);
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight:bold;
+    display:block;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Cedarville Cursive', cursive;
+  }
+  
+  #flip {
+    height:50px;
+    overflow:hidden;
+    margin-top: 5px;
+  }
+  
+  #flip > div > div {
+    color:#fff;
+    padding: 2px 12px;
+    height: 45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  
+  #flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+  
+  #flip div div {
+    background:#42c58a;
+  }
+  #flip div:first-child div {
+    background:#4ec7f3;
+  }
+  #flip div:last-child div {
+    background:#DC143C;
+  }
+
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+  
 
 /* SERVICES SECTION */
 #services{
