@@ -16,6 +16,12 @@
 #home p{
     font-size: 13px;
 }
+#container{
+    font-size: 20px;
+}
+#flip{
+    height: 30px;
+}
 
 
 /* SERVICES */
